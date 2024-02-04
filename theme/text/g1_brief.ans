@@ -1,23 +1,25 @@
-[0m[1;1H[2J|AO|PO[1;30mÚÄ[37m/[0m/[1;30m/Ä[0mÄ[1mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[0mÄ[1;30mÄ¿
-³ [37mMISSION BRIEFFING DOCUMENT   [30m³[14CP1XArion The Game   [0m 
-[1;30m³ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ À[0mÄ[1mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[0mÄ[1;30mÄ¿
-³[77C³
-³ [0mWelcome, Commander, to the space station P1XArion. Your mission is to[7C[1;30m³
-³ [0mmanage the station's operations and navigate through a series of events[5C[1;30m³
-³ [0mthat will test your strategic abilities.[36C[1;30m³
-³[77C³
-ş [0mGame Mechanics[62C[1;30m³
-³ -) [37mEvent Cards[0m: Draw from a deck of 100 cards, each presenting a unique[5C[1;30m³
-³    [0mscenario requiring a decision that will impact the station.[14C[1;30m³
-³ -) [37mResource Management[0m: Balance your resources wisely to keep the station   [1;30m³
-³    [0moperational.[61C[1;30m³
-³ -) [37mGame End[0m: The game ends if any resource reaches zero or after all[8C[1;30m³
-³    [0mavailable cards are drawn.[47C[1;30m³
-³[77C³
-ş [0mKey Resources[63C[1;30m³
-³ -) [37mElectric Power[0m: Powers systems and defenses.[29C[1;30m³
-³ -) [37mResidents' Happiness[0m: Indicates morale and stability.[20C[1;30m³
-³ -) [37mDiplomacy Level[0m: Affects external relations and reputation.[14C[1;30m³
-³ -) [37mHealth Support Resources[0m: Vital for sustaining life.[21C[1;30m³
-³[77C³
-ÀÄ[0mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[1;30mÄPRESSÄ[[0;5mENTER[0;1;30m]ÄTOÄBEGINÄ[0mÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ[1;30mÄÙ
+[0m[1;1H|PO[1;30m°°°°°°°°±²[47m [40m                                                      [47m [40m²±°°°°°°°°°°°
+°°°°°°°°±²[47m [40m                                                      [47m [40m²±°°°°°°°°°°°
+°°/[ MISSION [37mBRIEF [30m]\ÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜ
+°Û[37;47m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°[30m°[40m°
+°Û[37;47m°Welcome, [40mCommander[47m, to the [40mspace station P1XArion[47m. Your mission is to     [30m°[40m°
+°²[37;47m°manage the station's operations and navigate through a series of events   [30m°[40m±
+°±[37;47m°that will test your strategic abilities.                                  [30m°[40m±
+°±[37;47m°                                                                          [30m°[40m±
+°±[37;47m°[33mGame Mechanics [37m                                                           [30m°[40m±
+°±[37;47m°-) [40mEvent Cards[47m: Draw from a deck of [32;42m100 cards[37;47m, each presenting a unique   [30m°[40m±
+°±[37;47m°   scenario requiring a decision that will impact the station.            [30m°[40m±
+°±[37;47m°-) [40mResource Management[47m: Balance your resources wisely to keep the station [30m°[40m±
+°±[37;47m°   operational.                                                           [30m°[40m±
+°±[37;47m°-) [40mGame End[47m: The game ends if any [41mresource reaches zero[47m or after all      [30m°[40m±
+°±[37;47m°   available cards are drawn.                                             [30m°[40m±
+°±[37;47m°                                                                          [30m°[40m±
+°±[37;47m°[33mKey Resources[37m                                                             [30m°[40m±
+°±[37;47m°-) [40mElectric Power[47m: Powers systems and defenses.                           [30m°[40m±
+°±[37;47m°-) [40mResidents' Happiness[47m: Indicates morale and stability.                  [30m°[40m±
+°±[37;47m°-)[30m [37;40mDiplomacy Level[47m: Affects external relations and reputation.            [30m°[40m±
+°±[37;47m°-) [40mHealth Support Resources[47m: Vital for sustaining life.                   [30m°[40m±
+°±[37;47m°[30m°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°[40m±
+°\\-ßßßßßßßßßßßßßßßßßßßßßßßßßßß[37mÛ PRESS [[0;5mENTER[0;1m] Û[30mßßßßßßßßßßßßßßßßßßßßßßßßßßßß-//
+°°°°°°°°±²[47m [40m                    [37mßßßßßßßßßßßßßßßßß                 [30;47m [40m²±°°°°°°°°°°°
+°°°°°°°°±²[47m [40m                                                      [47m [40m²±°°°°°°°°°°°

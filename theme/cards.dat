@@ -1,84 +1,112 @@
 # EVENT CARD
-This is a title of the first card
-Card A title
-Card A Description
--1
+Solar Flare Alert
+Shield Up
+Activate additional shields to protect the station.
+-2
+1
+0
+0
+Ride It Out
+Do nothing and hope for the best.
+-3
+0
+0
+0
+# EVENT CARD
+Diplomatic Delegation Visit
+Host Lavishly
+Spend resources to impress the delegation.
+0
+0
+2
+-2
+Minimal Effort
+Offer a standard welcome with no extras.
 0
 1
-2
-Card B title
-Card B Description
--3
-4
-5
--6
-# EVENT CARD
-This is a title of the |14SECOND|15 card
-Card A title
-Card A Description
 -1
 0
-1
-2
-Card B title
-Card B Description
+# EVENT CARD
+Unknown Virus Outbreak
+Quarantine and Trea
+Use resources to contain and treat the outbreak.
+0
+0
+0
 -3
-4
-5
--6
+Isolate and Observ
+Isolate the affected area and observe.
+0
+-2
+0
+-1
 # EVENT CARD
-This is a title of the |12THIRD killer|15 card
-Electric failure
-Smurais do sepuku so you can!
--100
-0
--5
-0
-Safe
-Smurais do sepuku so you can!
+Power Grid Malfunction
+mergency Repair
+Use extra power to fix the issue quickly.
+-4
 0
 0
 0
-0
-# EVENT CARD
-This is a title of the |12FIFTH killer|15 card
-supply failure
-Smurais do sepuku so you can!
-0
-0
-0
--100
-Safe
-Smurais do sepuku so you can!
-0
+Ration Power
+Ration power until the next supply arrives.
+-1
 0
 0
 0
 # EVENT CARD
-This is a title of the |12SIXTH killer|15 card
-Happiness failure
-Smurais do sepuku so you can!
-0
--100
--5
-0
-Safe
-Smurais do sepuku so you can!
+Space Pirates Approach
+Negotiate
+Attempt to negotiate with the pirates.
 0
 0
+-2
+0
+Activate Defenses
+Use power to activate defenses against pirates.
+-3
+1
 0
 0
 # EVENT CARD
-This is a title of the |12EIGHT killer|15 card
-Politics failure
-Smurais do sepuku so you can!
+Food Shortage
+Ration Strictl
+Impose strict rationing of food.
+0
+-1
+0
+2
+Seek Trade
+Attempt to trade with nearby stations or ships.
 0
 0
--100
+-2
+3
+# EVENT CARD
+Mysterious Artifact Discovery
+Study the Artifact
+Use resources to study the artifact.
+-2
+1
+1
+1
+Sell the Artifact
+Sell the artifact to a collector.
 0
-Safe
-Smurais do sepuku so you can!
 0
+-1
+2
+# EVENT CARD
+Recreational Facility Malfunction
+Repair Immediately
+Allocate resources for immediate repairs.
 0
+2
+0
+-2
+Delay Repairs
+Delay repairs until more resources are available.
+0
+-1
 0
 0

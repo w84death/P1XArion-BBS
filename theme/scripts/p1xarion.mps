@@ -50,7 +50,7 @@ Begin
   begin
 
     freadln(DataFile, line);  // Comment header - type card in the future
-    
+
     freadln(DataFile, line);  card.Title := line;
 
     freadln(DataFile, line);  card.aTitle := line;
@@ -70,13 +70,13 @@ Begin
     cards := cards + 1;
     deck[cards] := card;
   end;
-   
+
   fclose(DataFile);
 
   cardsLeft := cards;
 
 End;
-                              
+
 
 procedure InitializeGame;
 begin
@@ -123,7 +123,7 @@ begin
  end;
  //Write('|16');
 end;
-                
+
 procedure ProcessChoice();
 var
   _ep,_rh,_dl,_hs: Integer;
@@ -158,7 +158,7 @@ begin
     Write('|19|15'+_title);
     GotoXY(9,10);
     Write('|14'+_desc);
-    
+
     ElectricPower := ElectricPower + _ep;
     ResidentsHappiness := ResidentsHappiness + _rh;
     DiplomacyLevel := DiplomacyLevel + _dl;
@@ -172,6 +172,11 @@ begin
     if ResidentsHappiness > 100 then ResidentsHappiness := 100;
     if DiplomacyLevel > 100 then DiplomacyLevel := 100;
     if HealthSupport > 100 then HealthSupport := 100;
+
+    if ElectricPower < 0 then ElectricPower := 0;
+    if ResidentsHappiness < 0 then ResidentsHappiness := 0;
+    if DiplomacyLevel < 0 then DiplomacyLevel := 0;
+    if HealthSupport < 0 then HealthSupport := 0;
 
     Write('|19');
     GotoXY(12,15);
@@ -206,11 +211,12 @@ begin
     GotoXY(50,18);
     Write('|07-2 per turn');
     Write('|16');
+
     cardsLeft := cardsLeft -1;
     cardCount := cardCount + 1;
     activeCardId := activeCardId + 1;
     activeChoice := 0;
-    HealthSupport := HealthSupport - 1;
+
     ReadKey;
   end;
 end;
@@ -228,15 +234,18 @@ begin
   // FILL CARDS WITH DATA
 
   // TITLE
-  GotoXY(7,5);
+  DispFile('g1_today.ans');
+  GotoXY(7,4);
   Write('|15|17'+deck[activeCardId].Title);
+  GotoXY(7,5);
+  Write('Here will be the (optional) second line...');
 
   GotoXY(9,6);
   DrawBarLong(cardCount);
-  
+
   GotoXY(60,6);
   Write('|17DAY '+Int2Str(cardCount)+' of 100');
-  
+
   Write('|23');
   // CARD A
   GotoXY(4,9);
@@ -249,59 +258,59 @@ begin
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Electric Power');
+  Write(Int2Str(outcome)+' |14Electric Power');
 
   outcome := deck[activeCardId].aOutcome[RH];
   GotoXY(6,13);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Residents Happiness');
+  Write(Int2Str(outcome)+' |13Residents Happiness');
 
   outcome := deck[activeCardId].aOutcome[HS];
-  GotoXY(30,12);
+  GotoXY(36,12);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Health Support');
+  Write(Int2Str(outcome)+' |15Health Support');
 
   outcome := deck[activeCardId].aOutcome[DL];
-  GotoXY(30,13);
+  GotoXY(36,13);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Diplomacy Level');
+  Write(Int2Str(outcome)+' |11Diplomacy Level');
 
   // CARD B
 
-  GotoXY(16,17);
+  GotoXY(15,17);
   Write('|00'+deck[activeCardId].bTitle);
-  GotoXY(16,18);
+  GotoXY(15,18);
   Write('|15'+deck[activeCardId].bDesc);
 
   outcome := deck[activeCardId].bOutcome[EP];
-  GotoXY(18,20);
+  GotoXY(17,20);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Electric Power');
+  Write(Int2Str(outcome)+' |13Electric Power');
 
   outcome := deck[activeCardId].bOutcome[RH];
-  GotoXY(18,21);
+  GotoXY(17,21);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
-  Write(Int2Str(outcome)+' |00Residents Happiness');
+  Write(Int2Str(outcome)+' |14Residents Happiness');
 
   outcome := deck[activeCardId].bOutcome[HS];
-  GotoXY(42,20);
+  GotoXY(47,20);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
   Write(Int2Str(outcome)+' |00Health Support');
 
   outcome := deck[activeCardId].bOutcome[DL];
-  GotoXY(42,21);
+  GotoXY(47,21);
   if outcome>0 then Write('|10+');
   if outcome=0 then Write('|00 ');
   if outcome<0 then Write('|12');
@@ -311,25 +320,25 @@ end;
 
 procedure DisplayHeader();
 begin
-  DispFile('g1_header');
-  GotoXY(15,2);
+  //DispFile('g1_header');
+  GotoXY(15,1);
   Write('|14|16'+Int2Str(ElectricPower)+'%');
-  GotoXY(4,2);
+  GotoXY(4,1);
   DrawBar(ElectricPower);
 
-  GotoXY(34,2);
+  GotoXY(34,1);
   Write('|13|16'+Int2Str(ResidentsHappiness)+'%');
-  GotoXY(22,2);
+  GotoXY(22,1);
   DrawBar(ResidentsHappiness);
 
-  GotoXY(52,2);
+  GotoXY(70,1);
   Write('|11|16'+Int2Str(DiplomacyLevel)+'%');
-  GotoXY(41,2);
+  GotoXY(59,1);
   DrawBar(DiplomacyLevel);
 
-  GotoXY(70,2);
+  GotoXY(52,1);
   Write('|07|16'+Int2Str(HealthSupport)+'%');
-  GotoXY(59,2);
+  GotoXY(41,1);
   DrawBar(HealthSupport);
 
 end;
@@ -343,11 +352,11 @@ procedure DisplayStats();
 begin
   ClrScr;
   DispFile('g1_stats.ans');
-  GotoXY(36,5);
+  GotoXY(36,6);
   Write('|14'+Int2Str(ElectricPower)+'%');
-  GotoXY(25,5);
+  GotoXY(25,6);
   DrawBar(ElectricPower);
-    
+
   GotoXY(36,15);
   Write('|13'+Int2Str(ResidentsHappiness)+'%');
   GotoXY(25,15);
@@ -357,10 +366,10 @@ begin
   Write('|11'+Int2Str(DiplomacyLevel)+'%');
   GotoXY(63,15);
   DrawBar(DiplomacyLevel);
-    
-  GotoXY(74,5);
+
+  GotoXY(74,6);
   Write('|07'+Int2Str(HealthSupport)+'%');
-  GotoXY(63,5);
+  GotoXY(63,6);
   DrawBar(HealthSupport);
 
   ReadKey;
@@ -371,16 +380,16 @@ begin
   ClrScr;
 
   if ElectricPower < 1 then
-    DispFile('g1_end-1.ans');
+    DispFile('g1_end1.ans');
   else
   if ResidentsHappiness < 1 then
-    DispFile('g1_end-2.ans');
+    DispFile('g1_end2.ans');
   else
   if DiplomacyLevel < 1 then
-    DispFile('g1_end-3.ans');
+    DispFile('g1_end3.ans');
   else
   if HealthSupport < 1 then
-    DispFile('g1_end-4.ans');
+    DispFile('g1_end4.ans');
   else
   if cardsLeft < 1 then
     DispFile('g1_win.ans');
@@ -419,6 +428,11 @@ begin
 
   while True do
   begin
+    ClrScr;
+
+    DispFile('g1_intro.ans');
+    ReadKey;
+
     ClrScr;
     DispFile('g1_menu.ans');
 
